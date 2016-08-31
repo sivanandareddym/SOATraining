@@ -1,0 +1,4 @@
+com\example\ManufacturermsApplication.class
+com\example\model\Manufacturer.class
+com\example\ManufacturerAPI.class
+com\example\repository\ManufacturerRepository.class

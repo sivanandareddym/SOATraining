@@ -1,0 +1,23 @@
+---
+spring:
+  application:
+    name: order-lb
+    
+    
+  cloud:
+    config:
+      uri: http://localhost:8080
+      
+    
+---    
+#Allows Consul To Recognize two apps of the same type on the same host as seperate instances 
+spring:
+  cloud:
+    consul:
+      discovery:
+        instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+---  
+#SELECTS Any available port 
+server:
+  port: 8006        
