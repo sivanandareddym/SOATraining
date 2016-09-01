@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient("order-micorservice")
 public interface OrderClient {
 	
-	@RequestMapping(value="/", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value="/api/order", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<Order> findAll();
 
 }

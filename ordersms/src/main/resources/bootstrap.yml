@@ -16,8 +16,13 @@ spring:
     consul:
       discovery:
         instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
+        health-check-interval: 10m
+        
+      config:
+        watch:
+          enabled: false
 ---  
 #SELECTS Any available port 
 server:
-  port: ${PORT:${SERVER_PORT:0}}        
+    port: 8003        
+ # port: ${PORT:${SERVER_PORT:0}}        

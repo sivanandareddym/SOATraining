@@ -1,0 +1,13 @@
+{
+  "groups": [{
+    "name": "newConfig",
+    "type": "com.example.OrderAPI",
+    "sourceType": "com.example.OrderAPI"
+  }],
+  "properties": [{
+    "name": "newConfig.data",
+    "type": "java.lang.String",
+    "sourceType": "com.example.OrderAPI"
+  }],
+  "hints": []
+}
