@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EnableMongoRepositories(basePackages="com.example.repository")
 /**
 * This is my first spring boot app
+* @Author Kishore
 **/
 public class FirstSpringBootAppApplication {
 
